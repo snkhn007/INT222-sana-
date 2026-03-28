@@ -1,0 +1,4 @@
+this is content of dummt dot txt
+this is line 02
+this is line 03
+this is line 04

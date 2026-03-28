@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Socket</title>
+</head>
+<body>
+    <h1>Chat Application Demo</h1>
+    <script>
+        // connection between html(browser)<->socket
+        // creating websocket connection
+        let socket = new WebSocket('ws://localhost:8080');
+
+        // connection opened at client end
+        socket.onopen = () =>{
+            console.log('Connected to Web Socket Server');
+            socket.send('Hello Server');
+        }
+
+        // receiving msgs from the server
+        socket.onmessage = (msg) =>{
+            console.log('Server says (to client): ', msg.data);
+            // msg.data contains server msg 
+        }
+    </script>
+    
+</body>
+</html>

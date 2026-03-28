@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket.Io Chat Application</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #messages{
+            margin: 15px;
+            border: solid rgb(174, 169, 169) 1px;
+            box-shadow: 2px 2px 5px rgb(117, 115, 115);
+            border-radius: 5px;
+            height: 300px;
+            overflow-y: scroll;
+            background-color: rgb(207, 212, 211);
+        }
+        h1{
+            margin: 15px;
+        }
+        #msg{
+            box-shadow: 2px 2px 5px rgb(117, 115, 115);
+            border: solid rgb(174, 169, 169) 1px;
+            border-radius: 5px;
+            width: 80%;
+            height: 50px;
+            margin: 15px;
+        }
+        button{
+            box-shadow: 2px 2px 5px rgb(117, 115, 115);
+            border: solid rgb(174, 169, 169) 1px;
+            border-radius: 5px;
+            height: 50px;
+            padding: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Socket.Io Chat Application</h1>
+    <div id="messages"></div>
+    <input type="text" id="msg" placeholder="Type messages...">
+    <button is="send">Send</button>
+</body>
+</html>
